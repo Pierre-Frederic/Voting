@@ -191,7 +191,7 @@ contract Voting is Ownable {
     }
 
     // fonction qui retourne le vote d'un participant
-    function getVoteByAddress(address _address) public view returns (string memory) {
+    function getVoteByAddress(address _address) public view onlyRegistered returns (string memory) {
         require(voters[_address].isRegistered, unicode"Cette adresse n'est pas enregistrée");
         if(voters[_address].hasVoted){
             return getProposalDescription(voters[_address].votedProposalId);
