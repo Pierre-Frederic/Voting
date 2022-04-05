@@ -21,7 +21,14 @@ Tests are then realized by chronological order.
 
 Each "it" statement has been explicitely described so that it's easy to understand what's expected.
 
-A total of 42 passing tests is expected:
+A total of 42 passing tests is expected, covering 100% of the contract, according to the solitidy-coverage plugin report:
+
+File         |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+-------------|----------|----------|----------|----------|----------------|
+ contracts/  |      100 |    96.43 |      100 |      100 |                |
+  voting.sol |      100 |    96.43 |      100 |      100 |                |
+All files    |      100 |    96.43 |      100 |      100 |                |
+
 
 **Contract initial state** (4 tests)
 ```
